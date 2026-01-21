@@ -1,45 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8">
   <title>Allotment</title>
 
-  <!-- iOS Home Screen icon -->
-  <link rel="apple-touch-icon" href="https://alig-dev.github.io/allotment/ Untitled.png" />
+  <!-- iOS PWA meta -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Allotment">
 
-  <!-- PWA manifest -->
-  <link rel="manifest" href="/manifest.json" />
+  <!-- Icons -->
+  <link rel="apple-touch-icon" href="icon-180.png">
+  <link rel="manifest" href="manifest.json">
 
-  <!-- iOS standalone support -->
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="Allotment" />
-
-  <!-- Theme colours -->
-  <meta name="theme-color" content="#F28C28" />
-  <meta name="background-color" content="#F28C28" />
-
-  <!-- Prevent caching -->
-  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-  <meta http-equiv="Pragma" content="no-cache" />
-  <meta http-equiv="Expires" content="0" />
-
-  <!-- Immediate redirect to Power Apps -->
-  <meta http-equiv="refresh" content="0; url=https://apps.powerapps.com/play/e/addd2cc1-8339-ebad-b6ff-d6e7981307ac/a/64036b6d-8d24-4d2c-9eae-cd4b0411aef9?tenantId=40b6308c-ec0b-43b2-a7b2-fe17f903b425&hint=16817434-8be5-4456-9345-8fb713c97247" />
+  <!-- Prevent zoom / Safari UI -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <style>
     body {
       margin: 0;
-      background: #ffffff;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont;
+      background: #f7f7f7;
     }
   </style>
 </head>
-
 <body>
-  <noscript>
-    Redirecting to Allotment…
-  </noscript>
-</body>
-</html>
+
+ 
