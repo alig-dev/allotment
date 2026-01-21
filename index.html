@@ -4,53 +4,24 @@
   <meta charset="utf-8">
   <title>Allotment</title>
 
-  <!-- iOS PWA meta -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Allotment">
 
-  <!-- Icon (this is what we are testing) -->
   <link rel="apple-touch-icon" href="allotment-app-icon-180.png">
 
-  <!-- Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont;
-      background: #f7f7f7;
-    }
-
-    button {
-      font-size: 16px;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-      background: #2e7d32;
-      color: #fff;
-    }
-  </style>
 </head>
-
 <body>
 
-  <button id="launch">Open app</button>
-
-
+  <div>Opening app…</div>
 
   <script>
-    const powerAppsUrl = "https://apps.powerapps.com/play/e/addd2cc1-8339-ebad-b6ff-d6e7981307ac/a/64036b6d-8d24-4d2c-9eae-cd4b0411aef9";
-
-    window.location.href = powerAppsUrl;
+    setTimeout(function () {
+      window.location.href = "https://apps.powerapps.com/play/e/addd2cc1-8339-ebad-b6ff-d6e7981307ac/a/64036b6d-8d24-4d2c-9eae-cd4b0411aef9";
+    }, 500);
   </script>
-
 
 </body>
 </html>
 
- 
