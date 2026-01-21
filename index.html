@@ -9,77 +9,47 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Allotment">
 
-  <!-- Icons -->
+  <!-- Icon (this is what we are testing) -->
   <link rel="apple-touch-icon" href="allotment-app-icon-180.png">
-  <link rel="manifest" href="manifest.json">
 
   <!-- Viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <style>
-    <body>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont;
+      background: #f7f7f7;
+    }
 
-  <button id="launch"
-    style="
-      font-size:16px;
-      padding:12px 20px;
-      border:none;
-      border-radius:8px;
-      background:#2e7d32;
-      color:#fff;
-    ">
-    Open app
-  </button>
+    button {
+      font-size: 16px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #2e7d32;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button id="launch">Open app</button>
+
+  <!--
+  🔕 AUTO-REDIRECT IS FULLY DISABLED FOR ICON TESTING
 
   <script>
-    const powerAppsUrl = "https://apps.powerapps.com/play/e/addd2cc1-8339-ebad-b6ff-d6e7981307ac/a/64036b6d-8d24-4d2c-9eae-cd4b0411aef9?tenantId=40b6308c-ec0b-43b2-a7b2-fe17f903b425&hint=16817434-8be5-4456-9345-8fb713c97247";
+    const powerAppsUrl = "https://apps.powerapps.com/play/e/addd2cc1-8339-ebad-b6ff-d6e7981307ac/a/64036b6d-8d24-4d2c-9eae-cd4b0411aef9";
 
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-    const isStandalone = window.navigator.standalone === true;
-
-    const launch = () => {
-      window.location.href = powerAppsUrl;
-    };
-
-    // Attempt auto-launch (works in Safari / desktop)
-    if (!(isIOS && isStandalone)) {
-      launch();
-    }
-
-    // Always allow manual tap (required for iOS Home Screen)
-    document.getElementById("launch").addEventListener("click", launch);
-
-    // Optional: try once automatically after short delay
-    if (isIOS && isStandalone) {
-      setTimeout(() => {
-        try { launch(); } catch (e) {}
-      }, 600);
-    }
+    window.location.href = powerAppsUrl;
   </script>
-
-</body>
-
-
-  <div id="msg">Opening app…</div>
-
-  <script>
-    // 🔁 CHANGE THIS to your real Power Apps URL
-    const powerAppsUrl = "https://apps.powerapps.com/play/e/addd2cc1-8339-ebad-b6ff-d6e7981307ac/a/64036b6d-8d24-4d2c-9eae-cd4b0411aef9?tenantId=40b6308c-ec0b-43b2-a7b2-fe17f903b425&hint=16817434-8be5-4456-9345-8fb713c97247";
-
-    const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
-    const isStandalone = window.navigator.standalone === true;
-
-    if (isIOS && isStandalone) {
-      // iOS Home Screen app
-      // Delay is REQUIRED so iOS keeps the custom icon
-      setTimeout(() => {
-        window.location.href = powerAppsUrl;
-      }, 400);
-    } else {
-      // Laptop / desktop / normal browser
-      window.location.replace(powerAppsUrl);
-    }
-  </script>
+  -->
 
 </body>
 </html>
