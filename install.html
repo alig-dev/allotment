@@ -15,6 +15,14 @@
 
 <body style="font-family: system-ui; text-align:center; padding-top:40vh;">
   <h1>Allotment</h1>
-  <p>Use Share → Add to Home Screen</p>
+  <button onclick="openApp()" style="font-size:18px;padding:12px 20px;">
+    Open app
+  </button>
+
+  <script>
+    function openApp() {
+      window.location.href = "https://apps.powerapps.com/play/YOUR_APP_ID";
+    }
+  </script>
 </body>
-</html>
+
